@@ -1,0 +1,10 @@
+/* --- FIX PAGE SPACING WHEN NAVBAR IS FIXED --- */
+.page-wrapper {
+  padding-top: 80px;     /* Adjust depending on your navbar height */
+}
+
+/* Optional: reduce default margin for all pages */
+.page-wrapper > * {
+  margin-top: 0;
+  padding-top: 0;
+}
