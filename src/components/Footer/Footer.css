@@ -1,0 +1,63 @@
+/* src/components/Footer.css */
+
+.es-footer {
+  border-top: 1px solid #1f2937;
+  background: #020617;
+  padding: 2rem 5vw 1rem;
+  margin-top: auto;
+  color: #d1d5db;
+}
+
+.es-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.es-footer-brand h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.es-footer-brand h3 span {
+  color: #f97316;
+}
+.es-footer-brand p {
+  max-width: 16rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.es-footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.es-footer-columns h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.es-footer-columns ul {
+  list-style: none;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+.es-footer-columns li + li {
+  margin-top: 0.25rem;
+}
+
+.es-footer-bottom {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .es-footer-inner {
+    flex-direction: column;
+  }
+}
