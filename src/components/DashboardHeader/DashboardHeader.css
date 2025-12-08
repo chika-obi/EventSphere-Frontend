@@ -1,0 +1,49 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.titleContainer .titleRight {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.titleContainer .titleRight .searchBar {
+  padding: 6px;
+  width: 380px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.titleContainer .titleRight .title {
+  /* padding: 6px;
+    border:1px solid #0f7c0f;
+    border-radius: 6px;
+    color: #0f7c0f; */
+  display: flex;
+  align-items: center;
+  line-height: 6px;
+  gap: 12px;
+}
+
+.titleContainer .titleRight .title .abbrv {
+  border-radius: 100%;
+  background-color: #0f7c0f;
+  color: #fff;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleContainer .titleRight .title .userName .user {
+  font-weight: 600;
+  font-size: small;
+}
+
+.titleContainer .titleRight .title .userName .role {
+  color: #b1afaf;
+  font-size: smaller;
+}

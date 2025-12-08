@@ -1,0 +1,13 @@
+.eventStats{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    gap: 2%;
+   
+}
+.eventSummary{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+   
+}

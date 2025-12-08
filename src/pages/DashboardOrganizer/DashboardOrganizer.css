@@ -1,0 +1,18 @@
+.metricsContainer{
+    display: flex;
+}
+.revenueContainer{
+  display: flex;
+  align-items: center;
+  gap: 24px
+}
+.summary{
+    display: flex;
+    margin: 100px;
+    
+}
+.quikactions{
+ margin-left: 10px;
+ margin-right: 60px;
+
+}

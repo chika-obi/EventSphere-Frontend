@@ -1,0 +1,92 @@
+.metricsCard{
+  background-color: #032313;  
+  width: 250px; 
+  min-height: 180px;         
+  border-radius: 10px;        
+  margin: 12px;               /* Space between cards */
+  padding: 12px 20px ;              /* Inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;     
+  color: #ffffff;             
+  overflow: hidden;           
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+
+}
+.metricsTitle{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #aede33;
+  font-size: 16px;
+  flex-shrink: 0;             /* Prevent shrinking */
+  white-space: nowrap;         /* Keep text on one line */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+
+.metricsCardWhite{
+     background-color: #fff;  
+  width: 250px;               
+  min-height: 180px;         
+  border-radius: 10px;        
+  margin: 12px;               /* Space between cards */
+  padding: 12px 20px ;              /* Inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;     
+  color: #000;             
+  overflow: hidden;           
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.metricsCardWhite .metricsTitle{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+  flex-shrink: 0;             /* Prevent shrinking */
+  white-space: nowrap;         /* Keep text on one line */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+    
+}
+
+ .metricsCount{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+
+.recentStats{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+  flex-shrink: 0;
+}
+
+.recentStats button{
+    border:1px solid #0f7c0f;
+    background-color: #fff;
+  border-radius: 5px;
+  color: #0f7c0f;
+  padding: 4px 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.metricsCardWhite:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease-in-out;
+}
