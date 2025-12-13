@@ -1,0 +1,123 @@
+.app__container {
+  display: flex;
+}
+.app__container .sidebarWrapper {
+  width: 20vw;
+  background-color: #032313;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid #032313;
+  display: flex;
+  flex-direction: column;
+}
+.app__container .sidebarWrapper .logoWrapper {
+  margin-top: 24px;
+  margin-left: 0px;
+  color: #fff;
+  text-align: center;
+}
+.app__container .sidebarWrapper .sidebar {
+  margin-left: 10px;
+}
+
+.app__container .sidebarWrapper .sidebar ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 6px 0;
+  margin: 12px 0;
+  list-style: none;
+  color: #fff;
+}
+.app__container .sidebarWrapper .sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Gilroy-Medium", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 24px;
+  width: 160px;
+
+  border-radius: 8px;
+}
+
+.organizer-title {
+ margin: 8px 30px;
+}
+
+.app__container .sidebarWrapper .sidebar ul li a:hover {
+  background-color: #aede33;
+  color: #000;
+}
+.app__container .sidebarWrapper .sidebar ul li a:focus {
+  color: #000;
+  background-color: #aede33;
+}
+
+.app__container .app__content {
+  width: 80vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .app__container .sidebarWrapper {
+    width: 24vw;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .app__container .sidebarWrapper .logoWrapper {
+    margin-left: 25px;
+  }
+  .app__container .sidebarWrapper .sidebar {
+    margin-left: 25px;
+  }
+
+  .app__container .sidebarWrapper {
+    width: 21vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .app__container {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+  
+
+  .app__container .app__content {
+    width: 100vw;
+  }
+
+  .app__container .sidebarWrapper {
+    
+    display: none;
+      
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .app__container {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+  
+
+  .app__container .app__content {
+    width: 100vw;
+  }
+
+  .app__container .sidebarWrapper {
+    
+    display: none;
+      
+  }
+
+  
+
+}

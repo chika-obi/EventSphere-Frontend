@@ -1,0 +1,221 @@
+.manage-users-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search + Filter */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-input,
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.filter-select {
+  max-width: 180px;
+}
+
+/* Table container */
+.users-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Desktop Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  font-weight: 600;
+  background: #f8f9ff;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  margin-right: 6px;
+  font-size: small;
+}
+
+.edit-btn {
+  background: #0f7c0f;
+  color: white;
+}
+
+.delete-btn {
+  background: #d9534f;
+  color: white;
+}
+
+/* ===== MOBILE TABLE AS CARDS ===== */
+@media (max-width: 700px) {
+  table,
+  thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  td {
+    padding: 10px 0;
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: block;
+    color: #555;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    margin: 5px 5px 0 0;
+    padding: 8px 12px;
+  }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #0f7c0f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: small;
+}
+
+.modal-close-btn {
+  background: red;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: small;
+}
+
+/* ===== SMALL MOBILE FIX ===== */
+@media (max-width: 600px) {
+  .top-controls {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filter-select {
+    width: 80%;
+    max-width: 90%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .modal-box {
+    width: 90%;
+  }
+
+  .page-title {
+    font-size: 18px;
+  }
+ 
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+  .edit-btn,
+  .delete-btn {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .page-title {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,138 @@
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  flex-wrap: wrap; /* allows wrapping when screen is small */
+  gap: 12px; /* small spacing when wrapped */
+}
+
+.titleContainer .titleRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap; /* prevents overflow */
+  max-width: 100%;
+}
+
+.titleContainer .titleleft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.titleContainer .titleRight .searchBar {
+  padding: 6px;
+  width: 280px;   /* reduced from 380px */
+  max-width: 100%; /* responsive */
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.titleContainer .titleRight .title {
+  display: flex;
+  align-items: center;
+  line-height: 6px;
+  gap: 12px;
+  flex-shrink: 0; /* prevents squishing */
+}
+
+.titleContainer .titleRight .title .abbrv {
+  border-radius: 100%;
+  background-color: #0f7c0f;
+  color: #fff;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer .titleRight .title .userName .user {
+  font-weight: 600;
+  font-size: small;
+}
+
+.titleContainer .titleRight .title .userName .role {
+  color: #b1afaf;
+  font-size: smaller;
+}
+
+/* Hide hamburger on large screens */
+.displaynav {
+  display: none;
+  color: #fff;
+}
+
+/* ================= MOBILE (<= 768px) ===================*/
+@media (max-width: 768px) {
+  .titleContainer {
+    padding: 10px 16px;
+  }
+
+  .titleContainer .titleRight .searchBar {
+    display: none;
+  }
+
+  .titleContainer .titleleft h2 {
+    font-size: 1rem;
+  }
+
+  /* Reduce spacing */
+  .titleContainer .titleRight {
+    gap: 14px;
+  }
+}
+
+/* ================= SMALL MOBILE (<= 576px) ===================*/
+@media (max-width: 576px) {
+  .titleContainer {
+    padding: 10px;
+  }
+
+  /* Show hamburger */
+  .displaynav {
+    display: block;
+    margin-right: 16px;
+    color: #000;
+  }
+
+  /* Reduce avatar */
+  .titleContainer .titleRight .title .abbrv {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    width: 100vw;
+    background-color: #000;
+    z-index: 10;
+    height: 100vh;
+    margin-top: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 9%;
+  }
+
+  .hamburger ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 2.5rem;
+    gap: 34px;
+    font-size: large;
+    list-style: none;
+  }
+
+  .hamburger ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .hamburger ul li a:hover {
+    color: red;
+  }
+}

@@ -1,0 +1,236 @@
+.manage-events-container {
+  padding: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Controls Row */
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 350px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.search-icon {
+  color: #808080;
+  font-size: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-icon {
+  font-size: 22px;
+  color: gray;
+}
+
+.filter-btn {
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e8e8e8;
+  font-weight: 500;
+}
+
+.filter-btn.active {
+  background: #0f7c0f;
+  color: white;
+}
+
+/* Event Table */
+.event-table-wrapper {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th {
+  background: #f1f1f1;
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.event-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.edit-btn {
+  color: #0f7c0f;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: #e11d48;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-badge.published {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.status-badge.draft {
+  background: #fef9c3;
+  color: #b45309;
+}
+
+.status-badge.archived {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* MOBILE Cards */
+.event-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+.card-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.edit-card {
+  background: transparent;
+  color: #0f7c0f;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+.delete-card {
+  background: transparent;
+  color: #e11d48;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+/* Show table only on large screens */
+@media (min-width: 900px) {
+  .event-table-wrapper {
+    display: block;
+  }
+  .event-cards {
+    display: none;
+  }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.modal input,
+.modal select {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-mybtn {
+  padding: 8px 15px;
+  background: red;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-mybtn {
+  padding: 8px 15px;
+  background: #0f7c0f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

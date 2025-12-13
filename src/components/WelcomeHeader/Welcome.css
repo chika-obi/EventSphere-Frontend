@@ -1,0 +1,23 @@
+.welcomeHeader {
+  color: #000;
+  padding: 0 44px ;
+}
+
+.welcomeText h2{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* -------------------------------
+   BREAKPOINTS
+-------------------------------- */
+@media (max-width: 768px) {
+.welcomeHeader {
+    padding: 0 24px;
+}
+}
+@media (max-width: 576px) {
+  .welcomeHeader {
+    padding: 0 24px;
+}
+}

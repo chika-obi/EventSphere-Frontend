@@ -1,0 +1,74 @@
+.metricsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 34px;
+  width: 90%;
+  gap: 20px;
+}
+
+.revenueContainer {
+  display: flex;
+  align-items: center;
+  /* box-sizing: border-box; */
+  /* padding: 60px; */
+  margin: 60px 48px;
+  gap: 24px;
+  width: 90%;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  margin: 80px 48px;
+  gap: 16px;
+  background-color: #f5f4f7;
+  border-radius: 10px;
+  width: 88%;
+}
+
+/* -------------------------------
+   BREAKPOINTS
+-------------------------------- */
+
+/* Small tablets / large phones (max 768px) */
+@media (max-width: 768px) {
+  .metricsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    width: 100%;
+    gap: 20px;
+  }
+  .revenueContainer{
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 60px 10px;
+    
+  }
+  .activity {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 80px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .metricsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    width: 100%;
+    gap: 20px;
+  }
+  .revenueContainer{
+    flex-wrap: wrap;
+    width: 100%;
+     margin: 60px 10px;
+   
+  }
+  .activity {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 80px 10px;
+  }
+}
