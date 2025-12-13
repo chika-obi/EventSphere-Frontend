@@ -83,62 +83,41 @@
 }
 
 @media screen and (max-width: 840px) {
-  .app__container .sidebarWrapper .logoWrapper {
-    margin-left: 20px;
-  }
-  .app__container .sidebarWrapper .sidebar {
-    margin-left: 20px;
-  }
-
-  .app__container .sidebarWrapper {
-    width: 21vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .app__container {
     flex-direction: column-reverse;
+    width: 100vw;
   }
+  
 
   .app__container .app__content {
     width: 100vw;
   }
 
   .app__container .sidebarWrapper {
-    border-right: none;
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    bottom: 0;
-    align-items: center;
+    
+    display: none;
+      
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .app__container {
+    flex-direction: column-reverse;
     width: 100vw;
-    height: 76px;
-    z-index: 1000;
+  }
+  
+
+  .app__container .app__content {
+    width: 100vw;
   }
 
-  .app__container .sidebarWrapper .logoWrapper {
+  .app__container .sidebarWrapper {
+    
     display: none;
+      
   }
 
-  .app__container .sidebarWrapper .sidebar {
-    width: 100%;
-  }
+  
 
-  .app__container .sidebarWrapper .sidebar ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .app__container .sidebarWrapper .sidebar ul li a {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 21px;
-  }
-
-  .app__container .sidebarWrapper .sidebar ul li:last-child {
-    display: none;
-  }
 }

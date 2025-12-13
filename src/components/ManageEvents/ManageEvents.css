@@ -203,7 +203,7 @@
 
 .modal input,
 .modal select {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -213,19 +213,20 @@
 
 .modal-buttons {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 12px;
 }
 
-.cancel-btn {
+.cancel-mybtn {
   padding: 8px 15px;
-  background: #e5e5e5;
+  background: red;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.save-btn {
+.save-mybtn {
   padding: 8px 15px;
   background: #0f7c0f;
   color: white;

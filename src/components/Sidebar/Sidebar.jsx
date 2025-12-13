@@ -6,11 +6,18 @@ import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { LiaSignOutAltSolid } from "react-icons/lia";
 import { FaRegUser } from "react-icons/fa6";
 
+
 const Sidebar = () => {
+  
   return (
     <>
       <div className="app__container">
         <div className="sidebarWrapper">
+
+
+        
+
+
           <div className="logoWrapper">EVENTSPHERE</div>
           <div className="sidebar">
             <ul>

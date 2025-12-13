@@ -6,13 +6,40 @@
   align-items: center;
   gap: 24px
 }
-.summary{
+/* .summary{
     display: flex;
     margin: 100px;
     
+} */
+
+.summary {
+  display: flex;
+  align-items: center;
+  margin: 80px 48px;
+  gap: 16px;
+  background-color: #f5f4f7;
+  border-radius: 10px;
+  width: 88%;
 }
 .quikactions{
  margin-left: 10px;
  margin-right: 60px;
 
+}
+
+/* Small tablets / large phones (max 768px) */
+@media (max-width: 768px) {
+.summary {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 80px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+.summary {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 80px 10px;
+  }
 }

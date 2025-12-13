@@ -146,8 +146,8 @@ const ManageEvents = () => {
             </select>
 
             <div className="modal-buttons">
-              <button className="cancel-btn" onClick={closeModal}>Cancel</button>
-              <button className="save-btn">Save</button>
+              <button className="cancel-mybtn" onClick={closeModal}>Cancel</button>
+              <button className="save-mybtn">Save</button>
             </div>
           </div>
         </div>

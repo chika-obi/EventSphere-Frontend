@@ -17,3 +17,16 @@
 .linChat{
     background-color:#f4fce6;
 }
+@media (max-width: 768px) {
+.chartContainer {
+  
+  width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+.chartContainer {
+  
+  width: 100%;
+}
+}

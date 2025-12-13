@@ -8,3 +8,16 @@
   font-weight: 400;
 }
 
+/* -------------------------------
+   BREAKPOINTS
+-------------------------------- */
+@media (max-width: 768px) {
+.welcomeHeader {
+    padding: 0 24px;
+}
+}
+@media (max-width: 576px) {
+  .welcomeHeader {
+    padding: 0 24px;
+}
+}

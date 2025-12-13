@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./ManageUsers.css";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
@@ -10,31 +11,14 @@ const ManageUsers = () => {
 
   const users = [
     { id: 1, name: "John Doe", email: "john@gmail.com", role: "user" },
-    {
-      id: 2,
-      name: "Sarah Lucky",
-      email: "sarah@yahoo.com",
-      role: "organizer",
-    },
-    {
-      id: 3,
-      name: "Michael Kane",
-      email: "michael@gmail.com",
-      role: "user",
-    },
-    {
-      id: 4,
-      name: "Uche Jumbo",
-      email: "jumbo@gmail.com",
-      role: "admin",
-    },
+    { id: 2, name: "Sarah Lucky", email: "sarah@yahoo.com", role: "organizer" },
+    { id: 3, name: "Michael Kane", email: "michael@gmail.com", role: "user" },
+    { id: 4, name: "Uche Jumbo", email: "jumbo@gmail.com", role: "admin" },
   ];
 
   const filteredUsers = users.filter((user) => {
     const matchesFilter = filter === "all" || user.role === filter;
-    const matchesSearch = user.name
-      .toLowerCase()
-      .includes(search.toLowerCase());
+    const matchesSearch = user.name.toLowerCase().includes(search.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -50,7 +34,8 @@ const ManageUsers = () => {
 
   return (
     <>
-    <DashboardHeader role="Admin" name="Madueke Amara" initials="M"/>
+      <DashboardHeader role="Admin" name="Madueke Amara" initials="M" />
+
       <div className="manage-users-container">
         <h2 className="page-title">Manage Users</h2>
 
@@ -91,18 +76,12 @@ const ManageUsers = () => {
             <tbody>
               {filteredUsers.map((user) => (
                 <tr key={user.id}>
-                  <td>{user.name}</td>
-                  <td>{user.email}</td>
-                  <td
-                    className={user.role === "user" ? "user" : "organizer"}
-                  >
-                    {user.role}
-                  </td>
-                  <td>
-                    <button
-                      className="edit-btn"
-                      onClick={() => openModal(user)}
-                    >
+                  <td data-label="Name">{user.name}</td>
+                  <td data-label="Email">{user.email}</td>
+                  <td data-label="Role">{user.role}</td>
+
+                  <td data-label="Actions">
+                    <button className="edit-btn" onClick={() => openModal(user)}>
                       Edit
                     </button>
                     <button className="delete-btn">Delete</button>
@@ -129,6 +108,7 @@ const ManageUsers = () => {
               <select defaultValue={selectedUser.role}>
                 <option value="user">User</option>
                 <option value="organizer">Organizer</option>
+                <option value="admin">Admin</option>
               </select>
 
               <div className="modal-actions">
@@ -146,3 +126,4 @@ const ManageUsers = () => {
 };
 
 export default ManageUsers;
+
